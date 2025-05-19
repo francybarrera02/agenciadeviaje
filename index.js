@@ -28,6 +28,7 @@ app.listen(port, () => {
 //app.use(express.json()); // Para analizar solicitudes JSON
 
 app.set('view engine', 'pug'); // Establecer EJS como motor de plantillas
+app.set('views', './views'); // Establecer la carpeta de vistas
 
 app.use((req, res, next) => {
     const year= new Date();
